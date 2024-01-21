@@ -1,0 +1,13 @@
+{% extends 'Quiz/dependencies.html' %}
+{% load static%}
+{% block content %}
+<h1> Welcome to EDITH</h1>
+
+<div class="container jumbotron">
+    <form method="POST" action="" >
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="btn btn-success" type="submit" value="Register Account">
+    </form>
+</div>
+{% endblock %}

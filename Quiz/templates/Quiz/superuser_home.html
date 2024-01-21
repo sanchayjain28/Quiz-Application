@@ -1,0 +1,20 @@
+{% extends 'Quiz/dependencies.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+    <h1>Welcome to EDITH Quiz - Superuser View</h1>
+
+    
+
+    <!-- Display Questions -->
+    <h2>Current Questions:</h2>
+    <ul>
+        {% for q in questions %}
+            <li>{{ q.question }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}
